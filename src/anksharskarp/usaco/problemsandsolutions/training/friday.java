@@ -1,3 +1,4 @@
+package anksharskarp.usaco.problemsandsolutions.training;
 /*
 ID: aerialc1
 LANG: JAVA
