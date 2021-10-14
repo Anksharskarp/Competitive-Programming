@@ -1,4 +1,4 @@
-package anksharskarp.usaco.problemsandsolutions.training;/*
+package training;/*
 ID: aerialc1
 LANG: JAVA
 TASK: ride

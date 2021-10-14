@@ -1,4 +1,4 @@
-package anksharskarp.usaco.problemsandsolutions.contests.bronze;
+package bronze;
 /*
 ID: anksharskarp
 LANG: JAVA
