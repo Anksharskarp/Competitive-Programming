@@ -1,14 +1,9 @@
-package training;/*
+/*
 ID: aerialc1
 LANG: JAVA
 TASK: ride
 */
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 
 class ride {
 
@@ -23,11 +18,11 @@ class ride {
         pw.close();
     }
 
-    public static int getValue (String s) {
+    public static int getValue(String s) {
         int v = 1;
-        for (int i = 0; i<s.length(); i++) {
-            v *= (s.charAt(i)-'A'+1);
+        for (int i = 0; i < s.length(); i++) {
+            v *= (s.charAt(i) - 'A' + 1);
         }
-        return v%47;
+        return v % 47;
     }
 }

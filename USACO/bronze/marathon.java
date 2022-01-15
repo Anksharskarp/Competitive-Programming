@@ -1,4 +1,3 @@
-package bronze;
 /*
 ID: anksharskarp
 LANG: JAVA

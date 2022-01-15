@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/CSES" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Codeforces" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/USACO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/USACO/bronze" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/USACO/training" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

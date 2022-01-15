@@ -1,16 +1,17 @@
 /*
-ID: anksharskarp
+ID: aerialc1
 LANG: JAVA
-TASK: crosswords
+TASK: test
 */
 import java.io.*;
 import java.util.*;
 
-class crosswords {
+class test {
     public static void main (String [] args) throws IOException {
-        BufferedReader f = new BufferedReader(new FileReader("crosswords.in"));
+        // Use BufferedReader rather than RandomAccessFile; it's much faster
+        BufferedReader f = new BufferedReader(new FileReader("test.in"));
         // input file name goes above
-        PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("crosswords.out")));
+        PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("test.out")));
         // Use StringTokenizer vs. readLine/split -- lots faster
         StringTokenizer st = new StringTokenizer(f.readLine());
         // Get line, break into tokens

@@ -1,4 +1,4 @@
-package training;/*
+/*
 ID: aerialc1
 LANG: JAVA
 TASK: gift1

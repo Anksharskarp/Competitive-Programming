@@ -1,4 +1,3 @@
-package training;
 /*
 ID: aerialc1
 LANG: JAVA
