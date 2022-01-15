@@ -5,9 +5,10 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/CSES" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Codeforces" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/USACO" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/USACO/bronze" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/USACO/training" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/USACO-Contests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/USACO-Contests/bronze" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/USACO-Contests/training" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/USACO-Training" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
