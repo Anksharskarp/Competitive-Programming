@@ -1,0 +1,44 @@
+--------------------
+----------
+Answers to AP Computer Science A Exam Practice Questions:
+----------
+
+Q1. Here is a program segment to find the quantity baseexp. Both base and exp are entered at the keyboard.
+System.out.println("Enter base and exponent: ");
+double base = IO.readDouble(); //read user input
+double exp = IO.readDouble(); //read user input
+/* code to find power, which equals baseexp */
+System.out.print(base + " raised to the power " + exp);
+System.out.println(" equals " + power);
+Which is a correct replacement for
+/* code to find power, which equals baseexp */?
+I double power;
+Math m = new Math();
+power = m.pow(base, exp);
+II double power;
+power = Math.pow(base, exp);
+III int power;
+power = Math.pow(base, exp);
+(A) I only
+(B) II only
+(C) III only
+(D) I and II only
+(E) I and III only
+
+
+ANSWER: B
+
+
+Q2:
+Here are some examples of negative numbers rounded to the nearest integer.
+Refer to the declaration
+double d = -4.67;
+Which of the following correctly rounds d to the nearest integer?
+(A) int rounded = Math.abs(d);
+(B) int rounded = (int) (Math.random() * d);
+(C) int rounded = (int) (d - 0.5);
+(D) int rounded = (int) (d + 0.5);
+(E) int rounded = Math.abs((int) (d - 0.5));
+
+
+ANSWER: C

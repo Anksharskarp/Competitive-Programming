@@ -1,0 +1,44 @@
+--------------------
+Recursion
+----------
+- A recursive method is a method that calls itself.
+
+----------
+General Form of Recursive Functions
+----------
+- Every recursive method has two distinct parts:
+    - A base case or termination condition that causes the method
+      to end.
+    - A nonbase case whose actions move the algorithm towards the base
+      case and termination.
+
+----------
+A word of warning...
+----------
+- Make sure your recursive function has a termination condition; otherwise, 
+  you could end up dealing with an infinite loop!
+
+----------
+An interesting example
+----------
+- Below is an example of a recursive function:
+
+
+public class WordPlay {
+
+  public static void stackWords() {
+    String word = IO.readString();
+    if (word.equals("."))
+      System.out.println();
+    else 
+      stackWords();
+    
+    system.out.println(word)
+  }
+
+  public static void main(String[] args) {
+    System.out.println("Enter list of words, one per line.");
+    System.out.println("Final word should be a period (.));
+    stackWords();
+  }
+}

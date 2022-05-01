@@ -1,0 +1,94 @@
+----------
+Method Overloading
+----------
+
+Overloaded methods are two or more methods in the same class
+that have the same name but different parameter lists.
+For example,
+
+public class DoOperations {
+    public int product(int n) {
+        return n * n;
+    }
+
+    public double product(double x) {
+        return x * x;
+    }
+
+    public double product(int x, int y) {
+        return x * y;
+    }
+}
+
+--------------------
+----------
+Primitive Data types
+----------
+All of the numerical data types, like double and int, as well
+as types char and boolean, are primitive data types.
+All objects are reference data types.
+the difference lies in the way they are stored.
+Consider the statements:
+
+int num1 = 3;
+int num2 = num1;
+
+The variables num1 and num2 can be thought of as memory
+slots, labeled num1 and num2, respectively. They each 
+get their own memory.
+
+If either of the above variables is now changed, the other is  
+not affected. Each has its own memory slot.
+
+----------
+Reference Data Types
+----------
+Date d = new Date(2, 17, 1948);
+This declaratio creates a reference variable d that refers
+to a Date object. The value of d is the address in memory
+of that object.
+
+Suppose the following declaration is now made:
+Date birthday = d;
+This statement creates the reference variable birthday, which
+contains the same address as d.
+
+--------------------
+----------
+Passing Primitive Types as Parameters
+----------
+-Parameters are passed by value
+-For primitive types this means that when a method is called,
+a new memory slot is allocated for each parameter.
+-The value of each argument is copied into the newly created
+memory slot corresponding to each parameter.
+-During execution of the method, the parameters are local
+to that method.
+-Any changes made to the parameters will not affect the values
+of the arguments in the calling program.
+-When the method is exited, the local memory slots for the 
+parameters are erased.
+-Essentially, when you exit a method, the parameter variables 
+are deleted. 
+--------------------
+----------
+Passing Objects as Parameters
+----------
+-In Java both primitive types and object references are passed
+by value.
+-When an object's reference is a parameter, the same
+mechanism of copying into local memory is used.
+-The key difference is that the address (reference) is copied,
+not the values of the individual instance variables.
+-As with primitive types, changes made to the parameters
+will not change the values of the matching arguments.
+-What this means in practice is that it is not possible
+for a method to replace an object with another one -- you
+can't change the reference that was passed. It is, however,
+possible to change the state of the object to which the parameter
+refers through methods that act on the object.  
+
+**********
+ALWAYS REMEMBER. AFTER A METHOD IS FINISHED, THE VARIABLES ARE ALWAYS
+CLEARED AND DELETED, RESETTING TO ORIGINAL STATE.
+**********

@@ -1,0 +1,34 @@
+--------------------
+An Important Note
+----------
+- The presentation for your final project in this class will be on April 27th.
+  Please have your presentation ready beforehand, and your project COMPLETED by that
+  deadline.
+
+----------
+Arrays
+----------
+Initialization:
+- In Java, an array is an object; therefore, the keyword 'new' must be used in its creation.
+  The size of an array remains fixed once it has been created. As with String objects,
+  however, an array reference may be reassigned to a new array of a different size.
+
+- If you reinitialize another array with the same name as a previous one, then the memory
+  allocated for the previous data array is recycled by Java's automatic garbage collection
+  system.
+
+
+
+----------
+ArrayLists
+----------
+- An ArrayList provides an alternative way of storing a list of objects and has the following advantages over an array:
+    - An ArrayList shrinks and grows as needed in a program, whereas an array has a fixed length
+      that is set when the array is created.
+
+    - In an ArrayList list, the last slot is always list.size() - 1, whereas in a partially filled
+      array, you, the programmer, must keep track of the last slot currently in use.
+
+    - For an ArrayList, you can do insertion or deletion with just a single statement. Any shifting
+      of elements is handled automatically. In an array, however, insertion or deletion requires you
+      to write the code that shifts the elements.

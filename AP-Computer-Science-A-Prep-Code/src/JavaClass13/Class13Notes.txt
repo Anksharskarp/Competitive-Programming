@@ -1,0 +1,92 @@
+*----------*
+Classes and objects are basic concepts of OOP which revolve around
+the real life entities.
+
+Class: A class is a user defined blueprint or prototype from which objects
+are created. It represents the set of properties or methods that are common
+to all objects of one type.
+*----------*
+
+Class declarations can include these components:
+    - Fields are variables that provides the state 
+      of the class and its objects.
+    - Constructors are used for initializing new objects
+    - Methods are used to implement the behavior of the class and its objects
+
+---------------
+An Object is a basic unit of OOP and an instance of the 
+class.
+
+A typical Java program creates many objects, which interact by invoking methods.
+They are similar to functions.
+
+|EX| 
+A program that maintains a database of all books in a
+library has two objects:
+    - A book objects, with operations like getTitle,
+    isOnShelf, etc.
+    - A ListOfBooks object, with operations like search,
+    addBook, removeBook, and sortByAuthor.
+
+Think: what are the classes, fields, etc. that I need to 
+properly do the job?
+
+---------------
+
+Public methods are accessible to all programs
+
+Private methods and variables in a class can be accessed 
+only by methods of that class.
+
+Restriction of access is known as information hiding.
+
+Even though Java allows public instance variables, in the AP Java subset, 
+all instance variables are private.
+
+Protected is not part of AP Computer Science. It is in between public and private.
+It is only accessible by the package the class is in. Not accessed by ALL programs.
+Think of it as a "medium'
+
+---------------
+
+A static variable (class variable) contains a value that is shared by all instances 
+of that class.
+
+Indicates that memory allocation happens once. All instances of that class
+share just one copy of it.
+
+Typical uses of a static variable are to keep track of statistics for objects
+of the class.
+
+For example a private static int employeeCount = 0; doesn't change. Everybody has the 
+same number of employees, so they all share the static variable.
+
+|EX|
+
+public class Employee {
+    private String name;
+    private static int employeeCount; //number of employees
+    public static final double OVERDRAWN_PENALTY = 20.00;
+
+    public Employee(< parameter list>) {
+        <initialization of private instance variables>
+        employeeCount++; //increment count of all employees
+    }
+}
+
+In the above example, the static variables have just one single copy,
+because they are shared.
+
+---------------
+
+Method Headers:
+
+public void withdraw(String password, double amount) 
+
+Access specifier: public/private/Protected
+Return type: String, array, int, boolean, etc.
+Method Name: name you give it
+Parameter List: the input that the program gives it (or the user)
+
+---------------
+

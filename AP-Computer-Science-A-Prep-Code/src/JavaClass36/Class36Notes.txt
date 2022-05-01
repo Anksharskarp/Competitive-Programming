@@ -1,0 +1,29 @@
+--------------------
+4 Types of Free-Response Questions on the AP Computer Science A exam
+----------
+
+----------
+Methods and Control Structures
+----------
+- Students will be asked to write program code to create objects of a class and call methods,
+and satisfy method specifications using expressions, conditional statement, and iterative statement.
+
+----------
+Classes
+----------
+- Students will be asked to write program code to define a new type by creating a class and satisfy
+method specifications using expressions, conditional statements, and iterative statements.
+
+----------
+Array/ArrayList
+----------
+- Students will be asked to write program code to satisfy method specifications using expressions,
+conditional statements, and iterative statements and creative, traverse, and manipulate elements
+in 1D array or ArrayList objects.
+
+----------
+2D Array
+----------
+- Students will be asked to write program code to satisfy method specifications using expressions,
+conditional statements, and iterative statements and creative, traverse, and manipulate
+elements in 2D array objects.

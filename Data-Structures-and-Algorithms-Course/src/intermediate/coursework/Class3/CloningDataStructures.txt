@@ -1,0 +1,17 @@
+Cloning data structures using the deep copy method for primitive data structures, like arrays, only creates a shallow
+copy when you're dealing with data structures containing objects.
+
+For example, if the variable contacts refers to an array of hypothetical Person instances, the result of the command:
+
+guests = contacts.clone()
+
+produces a shallow copy.
+
+A deep copy of the contact list can be created by iteratively cloning the individual elements, as follows, but only if
+the Person class is declared as Cloneable.
+Here, in this example, guests is a deep copy being made of the original data structure (containing objects), contacts.
+
+Person[] guests = new Person[contacts.length];
+for(int k = 0; k < contacts.length; k++) {
+    guests[k] = (Person) contacts[k].clone();
+}

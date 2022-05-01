@@ -1,0 +1,14 @@
+--------------------
+What does a Binary Search Do?
+----------
+- It simply uses a divide and conquer approach (only good for presorted data). It returns the position of the key that
+are looking for in the list. Here is its workflow:
+
+    1. It checks the middle term. If the value you are searching for is it, great! Otherwise,
+    depending on whether the key you are looking for is greater or lower than the middle value, it proceeds
+    to the right or left, readjusting the "middle" value.
+
+    2. It continues this way, further narrowing the scope of the search.
+
+    3. It eventually finds the key (super duper efficient, has a complexity of only O(log n)).
+

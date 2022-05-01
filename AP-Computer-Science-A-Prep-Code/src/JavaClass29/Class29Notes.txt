@@ -1,0 +1,20 @@
+--------------------
+Algorithm
+----------
+- An algorithm is a precise step-by-step procedure that
+solves a problem or achieves a goal.
+Don't write any code for an algorithm in a method 
+until the steps are completely clear to you.
+
+----------
+Precondition
+----------
+- The precondition for any piece of code, whether it is a method,
+loop, or block, is a statement of what is true immediately before
+execution of that code.
+
+----------
+Postcondition
+----------
+- The postcondition for a piece of code is a statement of what is true
+immediately after execution of that code.

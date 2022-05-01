@@ -1,0 +1,11 @@
+--------------------
+Final Presentations
+----------
+- William Zhang's Final Course Project Presentation can be found here:
+https://docs.google.com/presentation/d/1auIburMqpC1KSbYkwZfJv1240ucI_3Rm_aPmXLfjdUs/edit#slide=id.p
+
+- The source code for Exacto GPS can be found here:
+https://www.github.com/Argentable/Exacto-GPS
+
+- Download Exacto GPS(v1.1.0):
+https://github.com/Argentable/Exacto-GPS/releases/tag/v1.0.0

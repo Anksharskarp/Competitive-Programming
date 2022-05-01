@@ -1,0 +1,34 @@
+Part 2: A programmer decides to include the following classes in the program.
+• Simulation will run the simulation.
+• Display will show the state of the game.
+• BumperCar will know its identification number, position in the grid, and current
+direction when moving.
+• GridPoint will be a position in the grid. It will be represented by two integer
+fields, x_coord and y_coord.
+• Grid will keep track of all bumper cars in the game, the number of cars, and their positions in
+
+the grid. It will update the grid each time a car moves. It will be implemented with a two-
+dimensional array of BumperCar.
+
+1. Which operation should not be the responsibility of the GridPoint class?
+(A) isEmpty returns false if grid point contains a BumperCar, true otherwise
+(B) atBoundary returns true if x or y coordinate = ±20, false otherwise
+(C) left if not at left boundary, change grid point to 1 unit left of current point
+(D) up if not at top of grid, change grid point to 1 unit above current point
+(E) get_x return x-coordinate of this point
+
+Answer: A
+
+2. Which method is not suitable for the BumperCar class?
+(A) public boolean atBoundary()
+//Returns true if BumperCar at boundary, false otherwise.
+(B) public void selectRandomDirection()
+//Select random direction (up, down, left, or right) at start of turn.
+(C) public void reverseDirection()
+//Move to grid position that is in direction opposite to current direction.
+(D) public void move()
+//Take turn to move. Stop move after two changes of direction.
+E) public void update()
+//Modify Grid to reflect new position after each stage of move.
+
+Answer: E

@@ -1,0 +1,6 @@
+Shift Calendar
+
+I plan to create an Android app that allows people to keep
+track of their time, and ensure that their time is managed properly
+through a shift calendar, which can be synced to their Google account
+using the Google Calendar API.

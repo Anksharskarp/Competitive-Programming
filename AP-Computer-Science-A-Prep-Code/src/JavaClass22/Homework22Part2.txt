@@ -1,0 +1,47 @@
+Part 2: Multiple Choice Questions
+Q1
+A program simulates fifty slips of paper, numbered 1 through 50, placed in a bowl for a raffle
+drawing. Which of the following statements stores in winner a random integer from 1 to 50?
+(A) int winner = (int) (Math.random() * 50) + 1;
+(B) int winner = (int) (Math.random() * 50);
+(C) int winner = (int) (Math.random() * 51);
+(D) int winner = (int) (Math.random() * 51) + 1;
+(E) int winner = (int) (1 + Math.random() * 49);
+
+Answer: A
+--------------------
+Q2:
+Consider the code segment
+Integer i = new Integer(20);
+/* more code */
+Which of the following replacements for /* more code */ correctly sets i to have an Integer value
+of 25?
+I i = new Integer(25);
+II i.intValue() = 25;
+
+III Integer j = new Integer(25);
+i = j;
+(A) I only
+(B) II only
+(C) III only
+(D) I and III only
+(E) II and III only
+
+Answer: D
+--------------------
+Q3:
+Refer to these declarations:
+Integer k = new Integer(8);
+Integer m = new Integer(4);
+Which test will not generate an error?
+I if (k.intValue() == m.intValue())...
+II if ((k.intValue()).equals(m.intValue()))...
+III if ((k.toString()).equals(m.toString()))...
+(A) I only
+(B) II only
+(C) III only
+(D) I and III only
+(E) I, II, and III
+
+Answer: D (.equals() method works for wrapper classes AND String objects)
+--------------------

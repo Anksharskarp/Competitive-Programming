@@ -1,0 +1,74 @@
+To start a java program....
+
+public class MyClass
+{
+    public static void main(String args)
+        {
+            //Your code...
+        }
+}
+
+++ is the incriment command
+-- is the decriment command
+= is just defines and assigns values
++= adds value to variable
+-= decreases value to variable
+*= multiples variable by value
+/= divides variable by value
+%= performs modulo on variable
+
+== checks if values are equal
+!= checks if not equal
+> is a comparison operator
+< is a comparison operator 
+
+&& Logical and returns true if both true
+|| Logical or returns true if either true
+! Logical not reverses result returns false if the result is true
+
+s.length() Counts how many chars are in String (including spaces)
+s.toUpperCase() CONVERTS ALL TO UPPER CASE
+s.toLowerCase() converts all to lower case
+s.indexOf("o") Finds location of char
+
+JAVA CONVERTS STRINGS TO AN INTEGER AUTOMATICALLY!
+
+
+
+\' is the escape character. It returns:
+'
+
+\\ returns:
+\
+
+ESSENTAILLY, IT PREVENTS THE CHARACTER FROM BEING RECOGNIZED AS A RESERVED CHAR.
+
+Math.max(x,y)
+Math.min(x,y)
+Math.sqrt(x)
+Math.abs(x)
+Math.random()  //returns a random number between 0.0 (inclusive), and 1.0 (exclusive):
+ 
+Math.pow(x, y)
+Math.log(x)
+
+Math.sin(x)
+Math.cos(x)
+Math.tan(x)
+
+
+Math.sqrt(x)
+Math.abs(x)
+Math.random()
+Math.ceil(x)
+Math.floor(x)
+Math.max(x, y)
+Math.min(x, y)
+Math.pow(x, y)
+
+Math.round()
+
+When you convert from a double to a int, it will automatically use floor to round!
+
+
+

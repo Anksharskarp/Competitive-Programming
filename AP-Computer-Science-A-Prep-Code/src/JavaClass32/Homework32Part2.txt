@@ -1,0 +1,66 @@
+Part 2: Multiple Choice Questions:
+1. Refer to method search.
+/** @param v an initialized array of integers
+* @param key the value to be found
+* Postcondition:
+* - Returned value k is such that -1 <= k <= v.length-1.
+* - If k >= 0 then v[k] == key.
+* - If k == -1, then key != any of the elements in v.
+*/
+public static int search(int[] v, int key)
+{
+int index = 0;
+while (index < v.length && v[index] < key)
+index++;
+if (v[index] == key)
+return index;
+else
+return -1;
+}
+Assuming that the method works as intended, which of the following should be
+added to the precondition of search?
+(A) v is sorted smallest to largest.
+(B) v is sorted largest to smallest.
+(C) v is unsorted.
+(D) There is at least one occurrence of key in v.
+(E) key occurs no more than once in v.
+
+Answer: A
+
+
+2. The following code is designed to set index to the location of the first occurrence of key in array a and
+to set index to −1 if key is not in a.
+index = 0;
+while (a[index] != key)
+index++;
+if (a[index] != key)
+index = -1;
+which case will this program definitely fail to perform the task described?
+(A) When key is the first element of the array
+(B) When key is the last element of the array
+(C) When key is not in the array
+(D) When key equals 0
+(E) When key equals a[key]
+
+Answer: C
+
+
+
+3) Consider the following method:
+public static void sketch(int x1, int y1, int x2, int y2, int n)
+{
+if (n <= 0)
+drawLine(x1, y1, x2, y2);
+else
+{
+int xm = (x1 + x2 + y1 - y2) / 2;
+int ym = (y1 + y2 + x2 - x1) / 2;
+sketch(x1, y1, xm, ym, n - 1);
+sketch(xm, ym, x2, y2, n - 1);
+}
+}
+Assume that the screen looks like aCartesian coordinate system with the origin at the center, and
+that drawLine connects (x1,y1) to (x2,y2). Which picture best represents the sketch drawn by
+the method call sketch(a, 0, -a, 0, 2). where a is a positive integer?
+
+Answer: B

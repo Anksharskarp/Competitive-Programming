@@ -1,0 +1,42 @@
+1. /** @param n a positive integer */
+public int t(int n)
+{
+if (n == 1 || n == 2)
+return 2 * n;
+else
+return t(n - 1) - t(n - 2);
+}
+What will be returned by t(5)?
+(A) 4
+(B) 2
+(C) 0
+(D) −2
+(E) −4
+
+Answer: E
+
+
+2. This question refers to methods f1 and f2 that are in the same class:
+public int f1(int a, int b)
+{
+if (a == b)
+return b;
+else
+return a + f2(a - 1, b);
+}
+public int f2(int p, int q)
+{
+if (p < q)
+return p + q;
+else
+
+return p + f1(p - 2, q);
+}
+What value will be returned by a call to f1(5, 3)?
+(A) 5
+(B) 6
+(C) 7
+(D) 12
+(E) 15
+
+Answer: E

@@ -9,6 +9,11 @@
       <sourceFolder url="file://$MODULE_DIR$/USACO-Contests/bronze" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/USACO-Contests/training" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/USACO-Training" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AP-Computer-Science-A-Prep-Code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AP-Computer-Science-A-Prep-Code/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Data-Structures-and-Algorithms-Course" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Data-Structures-and-Algorithms-Course/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/Data-Structures-and-Algorithms-Course/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

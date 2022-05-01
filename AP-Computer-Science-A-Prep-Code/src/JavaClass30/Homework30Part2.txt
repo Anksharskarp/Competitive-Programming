@@ -1,0 +1,50 @@
+Part 2: Multiple Choice Questions:
+
+1. Refer to method f:
+public int f(int k, int n)
+
+{
+if (n == k)
+return k;
+else
+if (n > k)
+return f(k, n - k);
+else
+return f(k - n, n);
+}
+What value is returned by the call f(6, 8)?
+(A) 8
+(B) 4
+(C) 3
+(D) 2
+(E) 1
+
+Answer: D
+
+2. What does method recur do?
+/** @param x an array of n integers
+* @param n a positive integer
+*/
+public int recur(int[] x, int n)
+{
+int t;
+if (n == 1)
+return x[0];
+else
+{
+t = recur(x, n - 1);
+if (x[n-1] > t)
+
+return x[n-1];
+else
+return t;
+}
+}
+
+(A) It finds the largest value in x and leaves x unchanged.
+(B) It finds the smallest value in x and leaves x unchanged.
+(C) It sorts x in ascending order and returns the largest value in x.
+(D) It sorts x in descending order and returns the largest value in x.
+(E) It returns x[0] or x[n-1], whichever is larger.
+
+Answer: A

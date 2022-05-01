@@ -1,0 +1,96 @@
+--------------------   
+----------
+Method Overriding
+----------
+
+Any public method in a superclass can be 
+overridden in a subclass by defining a method 
+with the same return type and signature (name and 
+parameter)
+
+
+Partial Overriding
+
+Sometimes the code for overriding a method 
+includes a call to the superclass method. This
+is called partial overriding.
+
+Typically this ovvurs when the subclass method wants
+to do what the superclass does, plus something extra.
+
+This is achieved by using the keyword super in the 
+implementation. The computeGradeMethod in the GradStudent 
+subclass partially overrides the matching method in the 
+Student class. 
+
+The statement
+
+
+
+
+If super is used in the implementation of a subclass
+constructor, it must be used in the first line of the 
+constructor body.
+
+If no constructor is provided in a subclass, the compiler
+provides the following default constructor:
+
+public 
+
+
+
+
+Rules for Subclasses
+
+- A subclass can inherit public or protected variables and 
+methods.
+- A subclass can add new variables and methods.
+- A subclass can override inherited public methods
+- A subclass may not redefine a public method as private.
+- A subclass may not override static methods of the 
+superclass.
+- A subclass cannot directly access the private members of 
+its superclass. it must use accessor or mutator methods. 
+
+
+----------
+Question
+----------
+Can private variables or methods be inherited in Java?
+
+No, the private member are not inherited 
+
+----------
+Question
+----------
+Can constructors be inherited in Java?
+
+Constructors are not members, so they are not inherited by subclasses,
+but the constructor of the superclass can be invoked from the subclass. 
+
+--------------------
+----------
+Polymorphism
+----------
+
+A method that has been overridden in at least one subclass is said to 
+be polymorphic.
+
+An example is computeGrade, which is redefined for both GradStudent and
+UnderGrad.
+
+Polymorphism is the mechanism of selecting the appropriate method for a 
+particular object in a class hierarchy.
+
+The correct method is chosen because, in Java, method calls are always
+determined by the type of the actual object, not the type of the object reference.
+
+For example, even though s, g, and u are all declared as type Student,
+s.computeGrade(), g.computeGrade, and u.computeGrade() will all perform
+the 
+
+--------------------
+----------
+Dynamic Binding
+----------
+Making a run-time decision about which 

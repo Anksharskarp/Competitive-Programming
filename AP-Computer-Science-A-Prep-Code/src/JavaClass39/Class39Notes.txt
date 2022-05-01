@@ -1,0 +1,13 @@
+--------------------
+For each vs. For
+----------
+- Use a for-each loop whenever you need access to every element in an array without replacing
+  or removing any elements.
+
+- Use a for loop in all other cases: to access the index of any element, to replace or remove
+elements, or to access just some of the elements.
+
+- Do not use a for-each loop to remove or replace elements of an array.
+
+- Note that if you have an array of objects (not primitive types), you can use the for-each
+  loop and mutator methods of the object to modify the fields of any instance.

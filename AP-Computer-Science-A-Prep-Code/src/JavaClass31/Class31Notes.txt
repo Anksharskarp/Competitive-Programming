@@ -1,0 +1,21 @@
+--------------------
+General Rules for Recursion
+----------
+1. Avoid recursion for algorithms that involve large local arrays --
+too many recursive calls can cause memory overflow.
+
+2. Use recursion when it significantly simplifies code.
+
+3. Avoid recursion for simple iterative methods like factorial, Fibonacci,
+and the linear search.
+
+4. Recursion is especially useful for:
+   - Branching processes like traversing trees or directories.
+   - Divide-and-conquer algorithms like mergesort and binary search.
+----------
+Tips and Tricks for Solving Recursion Problems
+----------
+- When you are stuck on a tough recursion problem, write out the order that the program calls the
+functions. Does it call this function first, and while it calls it, what other functions does it call?
+How often does it call the functions until it stops and moves back up the function "hierarchy" to call
+the function above the other functions? You need to think about this as you do the problems.

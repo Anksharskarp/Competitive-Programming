@@ -1,0 +1,41 @@
+a)Consider these three tasks:
+
+I A sequential search of an array of n names
+II A binary search of an array of n names in alphabetical order
+III An insertion sort into alphabetical order of an array of n names that are initially in random
+order
+For large n, which of the following lists these tasks in order (from least to greatest) of their
+average case run times?
+(A) II I III
+(B) I II III
+(C) II III I
+(D) III I II
+(E) III II I
+
+Answer: A
+
+
+b) Consider the following method:
+/** Precondition: a[0],a[1]...a[n-1] contain integers. */
+public static int someMethod(int[] a, int n, int value)
+{
+if (n == 0)
+return -1;
+else
+{
+if (a[n-1] == value)
+return n - 1;
+else
+return someMethod(a, n - 1, value);
+}
+}
+The method shown is an example of
+(A) insertion sort.
+(B) mergesort.
+(C) selection sort.
+(D) binary search.
+(E) sequential search.
+
+Answer: E
+
+

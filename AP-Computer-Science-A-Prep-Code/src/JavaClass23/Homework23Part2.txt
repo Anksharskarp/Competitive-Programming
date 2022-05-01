@@ -1,0 +1,102 @@
+--------------------
+
+Q1:
+Consider this method:
+public static String doSomething(String s)
+{
+final String BLANK = " "; //BLANK contains a single space
+String str = ""; //empty string
+String temp;
+for (int i = 0; i < s.length(); i++)
+{
+temp = s.substring(i, i + 1);
+
+if (!(temp.equals(BLANK)))
+str += temp;
+}
+return str;
+}
+Which of the following is themost precise description of what doSomething does?
+(A) It returns s unchanged.
+(B) It returns s with all its blanks removed.
+(C) It returns a String that is equivalent to s with all its blanks removed.
+(D) It returns a String that is an exact copy of s.
+(E) It returns a String that contains s.length() blanks.
+
+Answer: C 
+
+--------------------
+
+Q2:
+public class Position
+{
+/** row and col are both >= 0 except in the default
+* constructor where they are initialized to -1.
+*/
+private int row, col;
+public Position() //constructor
+{
+row = -1;
+col = -1;
+}
+public Position(int r, int c) //constructor
+{
+row = r;
+col = c;
+}
+public int getRow() 
+{
+return row;
+}
+public int compareTo(Position p)
+{
+if (this.getRow() < p.getRow() || this.getRow() == p.getRow()
+&& this.getCol() < p.getCol())
+return -1;
+if (this.getRow() > p.getRow() || this.getRow() == p.getRow()
+&& this.getCol() > p.getCol())
+return 1;
+return 0; //row and col both equal
+}
+public String toString()
+{ return "(" + row + "," + col + ")"; }
+}
+public class PositionTest
+
+{
+public static void main(String[] args)
+{
+Position p1 = new Position(2, 3);
+Position p2 = new Position(4, 1);
+Position p3 = new Position(2, 3);
+//tests to compare positions
+...
+}
+}
+
+----------
+
+Question a). Which is true about the value of p1.compareTo(p2)?
+(A) It equals true.
+(B) It equals false.
+(C) It equals 0.
+(D) It equals 1.
+(E) It equals -1.
+
+Answer: E (Note that 'this' refers to the object that is currently calling the methods)
+
+----------
+
+Question b). Which boolean expression about p1 and p3 is true?
+I p1 == p3
+II p1.equals(p3)
+III p1.compareTo(p3) == 0
+(A) I only //Definitely not I, because they don't refer to same piece of memory.
+(B) II only //.equals() only works for strings (or classes that define a method by that name)
+(C) III only
+(D) II and III only
+(E) I, II, and III
+
+
+Answer: C 
+----------

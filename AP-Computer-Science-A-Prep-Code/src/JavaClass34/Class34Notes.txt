@@ -1,0 +1,75 @@
+--------------------
+Sorting Algorithms (AP Computer Science A)
+----------
+- For the AP Computer Science A course, you need to know the following sorting algorithms:
+    - Selection Sort
+    - Insertion Sort
+    - Merge Sort
+
+----------
+Merge Sort
+----------
+- Merge Sort uses recursion, which uses a method to call itself recursively.
+- A merge sort is like a divide-and-conquer. An array is split into two pieces.
+- Each piece is sorted. The two sorted pieces are then merged together into one sorted list.
+- In order to sort each of the two pieces, the same divide and conquer method is used.
+
+-----
+Step 1:
+-----
+- Split sub-lists in two until you reach pair of values.
+
+-----
+Step 2:
+-----
+- Sort/swap pair of values if needed
+
+-----
+Step 3:
+-----
+- Merge and sort sub-lists and repeat process until you merge to the full list.
+
+----------
+What happens in a merge sort?
+----------
+1. Start with an unsorted list of n elements
+2. The recursive cals break the list into n sublists, each of length 1.
+   Note that these n arrays, each containing just one element,a re sorted!
+3. Recursively merge adjacent pairs of lists. There are then approximately n/2 lists of length 2;
+   then, approximately n/4 ists of approximate length 4, and so on, until there is just one list of
+   length n.
+
+
+----------
+A comparison of the three sorting algorithms (complexity)
+----------
+- Three sorting algorithms you need to know for the AP Computer Science A Exam:
+    - Selection Sort: O(n^2)
+    - Insertion Sort: O(n^2)
+    - Merge Sort: O(n log n)
+
+----------
+A comparison of the three sorting algorithms (speed, fastest to slowest)
+1. Merge Sort (fast, stays flat throughout)
+2. Insertion Sort (average, increases somewhat steeply)
+3. Selection Sort (inefficient, increases very steeply)
+
+----------
+Sequential Search
+----------
+- Assume that you are searching for a key in a list of n elements. A sequential search starts at the first
+  element and compares the key to each element in turn until the key is found or there are no more
+
+----------
+Binary Search
+----------
+- If elements are in a sorted array, a divide-and-conquer approach provides a much more efficent
+searching algorithm.
+
+mid = (low + high) / 2
+if(key is equal to a[mid]) //found the key
+return mid;
+else if (key is less than a[mid] //key in left half of array
+<binSearch for key in a[low] to a[mid - 1]>
+else //key in right half of array
+<binSearch for key in a[mid + 1] to a[high]>

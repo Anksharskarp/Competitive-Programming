@@ -1,0 +1,21 @@
+Static Methods vs Instance Methods
+
+The methods discussed earlier -- constructors, accessors,
+and mutators -- all operate on individual objects of 
+a class. They are called instance methods.
+
+--------------------
+
+An instance method is invoked ina  client program by 
+using an object variable followed by the dot operator 
+followed by the method name:
+
+BankAccount b = new BankAccount();
+b.desposit(acctPassword, amount);
+
+A static method, by contrast, is invoked by using the
+class name with the dot operator. There is no need to
+create objects in order to access static methods or
+variables.
+
+double interestRate = BankAccount.getInterestRate();

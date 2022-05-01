@@ -1,0 +1,29 @@
+--------------------
+Sorting Algorithms (AP Computer Science A)
+----------
+- For the AP Computer Science A course, you need to know the following sorting algorithms:
+    - Selection Sort
+    - Insertion Sort
+    - Merge Sort
+
+----------
+Selection Sort
+----------
+- This is a search-and-swap algorithm, and remember that the selection sort searches
+and swaps. It always looks for the smallest element.
+
+- The sort will first span the array for the lowest value. Once it finds the lowest
+value, it will swap its position in the array with the data at index 0.
+
+- Now the first element is sorted. The process then repeats for index 1. The rest of
+the array will be searched for the lowest value and swapped with the data at index 1.
+
+
+----------
+Insertion Sort
+----------
+- It compares the first two elements and if the 2nd element is less than the 1st element,
+inserts the second value "in front" of the first value into index 0, moving the first value
+to index 1. the first two elements are now sorted.
+
+- Then, the third element is checked. It is inserted into its correct position.

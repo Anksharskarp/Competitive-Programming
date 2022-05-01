@@ -1,0 +1,12 @@
+//Algorithm to Find Second-to-Last Node in a Linked List where the the last node is indicated by a null next reference.
+
+if(size==0 || size==1) {
+    // no second to last node
+}
+
+Node runner = this.head;
+while(runner.getNext().getNext() != null) {
+    runner = runner.getNext();
+}
+// Now runner points to the node that points to the null node
+// (i.e., runner points to the second-to-last node.)
