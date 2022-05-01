@@ -6,7 +6,7 @@ public class Class2Part1
     {
         //System.out.println("Hello...");
         for (int i = 0; i < 10; i++)
-            System.out.println("Hello" + "o".repeat(i) + "...");
+            System.out.println("Hello" + "o" + "...");
             //.repeat(numberOfTimesToRepeat)
             //This is how you define a loop...
             /*
