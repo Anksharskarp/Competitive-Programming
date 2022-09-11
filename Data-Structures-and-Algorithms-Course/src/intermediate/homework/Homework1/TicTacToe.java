@@ -39,7 +39,7 @@ public class TicTacToe {
 
 
     public static void startGame(Scanner console){
-        if(first == true){
+        if(first){
             userPlay(console);
         }else{
             computerPlay(console);

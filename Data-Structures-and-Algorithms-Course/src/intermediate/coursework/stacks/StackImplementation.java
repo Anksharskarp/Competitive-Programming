@@ -3,7 +3,7 @@ package intermediate.coursework.stacks;
 class Stack {
     static final int MAX = 1000;
     int top;
-    int a[] = new int[MAX]; // Maximum size of Stack
+    int[] a = new int[MAX]; // Maximum size of Stack
 
     boolean isEmpty() {
         return (top < 0);
@@ -52,7 +52,7 @@ class Stack {
 }
 
 class StackImplementation {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Stack s = new Stack();
         s.push(10);
         s.push(20);

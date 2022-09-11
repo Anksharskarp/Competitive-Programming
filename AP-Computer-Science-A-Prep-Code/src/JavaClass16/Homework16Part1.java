@@ -35,7 +35,7 @@ public class Homework16Part1 extends JFrame {
             winner = "O";
           }
 
-          if (checkForWin() == true) {
+          if (checkForWin()) {
             JOptionPane.showConfirmDialog(null, "Game Over. Winner is : " + winner);
             for (int i = 0; i <= 8; i++) {
               buttons[i].setText("");

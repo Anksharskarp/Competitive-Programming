@@ -229,7 +229,7 @@ public class FirstGraph {
     public static void main(String[] args) {
         FirstGraph fg = new FirstGraph();
         fg.createGraph();
-        for(int i = 0; i < fg.GRAPH_SIZE; i++) {
+        for(int i = 0; i < GRAPH_SIZE; i++) {
             fg.preNode[i] = -1;
         }
         //fg.show();

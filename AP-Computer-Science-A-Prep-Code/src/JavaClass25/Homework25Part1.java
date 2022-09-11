@@ -65,7 +65,7 @@ public class Homework25Part1 {
             }
 
             g2.setColor(new Color(255, 255, 255));
-            if(winner==false){
+            if(!winner){
                 if(turn%2==0)
                     g2.drawString("Red's Turn",500,20);
                 else
@@ -81,7 +81,7 @@ public class Homework25Part1 {
         // 3. drop a checker
             int x = e.getX();
             int y = e.getY();
-            if(winner==false){
+            if(!winner){
                 if(x<(cellSize*grid[0].length) && y<(cellSize*grid.length)){
                    // int clickedRow = y/cellSize;
                     int clickedCol = x/cellSize;

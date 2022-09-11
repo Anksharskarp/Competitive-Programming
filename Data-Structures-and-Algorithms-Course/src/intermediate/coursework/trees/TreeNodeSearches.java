@@ -75,7 +75,7 @@ public class TreeNodeSearches {
         while(!stn.isEmpty()) {
             TreeNode tn = stn.pop();
             boolean tb = stb.pop();
-            if(tb == false) {
+            if(!tb) {
                 //We need to push back again so that we can later pop out and print.
                 stn.push(tn);
                 stb.push(true);

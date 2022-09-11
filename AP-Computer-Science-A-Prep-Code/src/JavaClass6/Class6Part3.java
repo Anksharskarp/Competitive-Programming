@@ -36,12 +36,10 @@ public class Class6Part3 {
 
     static void printFun(int test) {
         if (test < 1) {
-            return;
         } else {
             System.out.print(test);
             printFun(test - 1);
             System.out.print(test);
-            return;
         }
     }
     //Prints 3 2 1 1 2 3

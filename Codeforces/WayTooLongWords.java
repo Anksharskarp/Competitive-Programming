@@ -16,7 +16,7 @@ public class WayTooLongWords {
             input = strings.get(i);
             if (input.length() > 10) {
                 System.out.println(Character.toString(input.charAt(0)) + (input.length() - 2) +
-                        Character.toString(input.charAt(input.length() - 1)));
+                        input.charAt(input.length() - 1));
             } else {
                 System.out.println(input);
             }

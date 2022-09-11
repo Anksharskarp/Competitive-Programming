@@ -18,7 +18,7 @@ public class DynamicProgrammingExplorations {
     to give the final product of multiplying the singular row and column together, which is then added to the product
     matrix as an element.
      */
-    public static long[] matrixChainMultiplication(int P[], int beginningIndex, int endingIndex) {
+    public static long[] matrixChainMultiplication(int[] P, int beginningIndex, int endingIndex) {
 
         return null;
     }

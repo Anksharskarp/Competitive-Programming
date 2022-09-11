@@ -28,7 +28,7 @@ public class paint {
     }
 
     static class Kattio extends PrintWriter {
-        private BufferedReader r;
+        private final BufferedReader r;
         private StringTokenizer st;
 
         // standard input

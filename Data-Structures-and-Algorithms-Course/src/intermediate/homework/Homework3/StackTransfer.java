@@ -5,7 +5,7 @@ import java.util.Stack;
 public class StackTransfer {
     public static Stack<Integer> stackPush(Stack<Integer> stack) {
         for (int i = 0; i < 5; i++) {
-            Integer push = (Integer) stack.push(i);
+            Integer push = stack.push(i);
             System.out.println(push);
         }
         return stack;
@@ -13,21 +13,21 @@ public class StackTransfer {
 
     public static void pop(Stack<Integer> stack) {
         for (int i = 0; i < 5; i++) {
-            Integer pop = (Integer) stack.pop();
+            Integer pop = stack.pop();
             System.out.println(pop);
         }
     }
 
 
     public static void peek(Stack<Integer> stack) {
-        Integer peek = (Integer) stack.peek();
+        Integer peek = stack.peek();
         System.out.println("Top of the element is: " + peek);
     }
 
 
     public static void search(Stack<Integer> stack, int element) {
         System.out.println("Element searched is: ");
-        Integer search = (Integer) stack.search(element);
+        Integer search = stack.search(element);
         if (element == -1) {
             System.out.println("Stack is empty.");
         } else {

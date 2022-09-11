@@ -1,7 +1,7 @@
 package intermediate.coursework.sortingalgorithms;
 
 public class NumericalBucketSortDemo {
-    public static void numberSortRadix(int num[]) {
+    public static void numberSortRadix(int[] num) {
 
     }
 
