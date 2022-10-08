@@ -35,7 +35,7 @@ USACO Code (all written in Java)
 
 Hopefully this above example is useful.
 
-###Final Tips
+### Final Tips
 - In general, it's an excellent idea to use pseudocode and flowcharts, combined with 
 careful reading and attention to detail to solve problems.
 - If you get discouraged because the problems are hard, read this excerpt from the official
