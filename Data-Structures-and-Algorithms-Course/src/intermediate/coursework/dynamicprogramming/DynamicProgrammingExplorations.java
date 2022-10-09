@@ -1,4 +1,5 @@
 package intermediate.coursework.dynamicprogramming;
+
 /*
 Dynamic Programming Algorithms:
 In dynamic programming, a large and complicated problem is broken down into smaller sub-problems in a recursive manner
@@ -6,6 +7,9 @@ until the smallest problem size is reached. From there on out, the solutions are
 a more sophisticated solution until at the root of the "solution tree," the final solution is obtained by the algorithm.
  */
 public class DynamicProgrammingExplorations {
+    //Example case of recursive calls on a dynamic programming operation that breaks down a problem into smaller parts.
+    static int count = 0;
+
     public static void main(String[] args) {
         count = 0;
         int N = 10;
@@ -13,8 +17,8 @@ public class DynamicProgrammingExplorations {
         int fn = recursiveFunction(N);
         System.out.println(fn + " with " + count + " recursive calls. Beginning new calculation...");
 
-        int dp[] = new int[N + 1];
-        for(int i = 1; i <= N; i++) {
+        int[] dp = new int[N + 1];
+        for (int i = 1; i <= N; i++) {
             dp[i] = -1;
         }
         count = 0;
@@ -40,9 +44,6 @@ public class DynamicProgrammingExplorations {
         return null;
     }
 
-    //Example case of recursive calls on a dynamic programming operation that breaks down a problem into smaller parts.
-    static int count = 0;
-
     //Top-down algorithm (with base case that it constantly returns to, resulting in the original calculations
     //having to constantly be repeated with every iteration.
     /*
@@ -58,7 +59,7 @@ public class DynamicProgrammingExplorations {
         count++;
         System.out.println("n = " + n + "  count = " + count);
 
-        if(n == 1 || n == 2) {
+        if (n == 1 || n == 2) {
             return n;
         }
 
@@ -70,16 +71,16 @@ public class DynamicProgrammingExplorations {
     Time Complexity: O(n), possibly 30n
     Space Complexity: O(LARGE NUMBER), due to the recursive calls making the stack large
      */
-    public static int dynamicProgrammingRecursionWithMemorization(int n, int dp[]) {
+    public static int dynamicProgrammingRecursionWithMemorization(int n, int[] dp) {
         count++;
         System.out.println("n = " + n + "    count = " + count);
 
-        if(dp[n] != -1) {
+        if (dp[n] != -1) {
             System.out.println("Return without recursive call!");
             return dp[n];
         }
 
-        if(n <= 2) {
+        if (n <= 2) {
             dp[n] = n;
             return dp[n];
         }
@@ -93,11 +94,11 @@ public class DynamicProgrammingExplorations {
     Time Complexity: O(n), possibly 2n
     Space Complexity: O(n)
      */
-    public static int dynamicProgrammingBottomUp(int n, int dp[]) {
+    public static int dynamicProgrammingBottomUp(int n, int[] dp) {
         count++;
         dp[1] = 1;
         dp[2] = 2;
-        for(int i = 3; i <= n; i++) {
+        for (int i = 3; i <= n; i++) {
             dp[i] = dp[i - 1] + dp[i - 2];
         }
         return dp[n];

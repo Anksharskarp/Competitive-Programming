@@ -9,10 +9,10 @@ public class Class22Part1 {
         -compareTo()
         -.equals() method
         */
-        Integer intObj = new Integer(6);
+        Integer intObj = Integer.valueOf(6);
         int j = intObj.intValue();
-        Object object = new Integer(5);
-        Integer intObj2 = new Integer(3);
+        Object object = Integer.valueOf(5);
+        Integer intObj2 = Integer.valueOf(3);
         int k = intObj2.intValue();
 
         System.out.println(j);

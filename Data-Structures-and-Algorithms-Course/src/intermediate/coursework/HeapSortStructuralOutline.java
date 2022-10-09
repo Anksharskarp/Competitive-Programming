@@ -49,12 +49,12 @@ public class HeapSortStructuralOutline {
         for (int i=0;i<hs.heap.length;i++)
              hs.removeMin();
     }
-    private static void swap(int i, int j, int a[]){
+    private static void swap(int i, int j, int[] a){
         int t=a[i];
         a[i]=a[j];
         a[j]=t;
     }
-    public static void selectionSort(int a[]){
+    public static void selectionSort(int[] a){
         for (int i=0;i<a.length-1;i++){
             int mi=i;
             for (int j=i+1;j<a.length;j++)
@@ -64,7 +64,7 @@ public class HeapSortStructuralOutline {
                 swap(i,mi,a);
         }
     }
-    public static void insertionSort(int a[]){
+    public static void insertionSort(int[] a){
         for (int i=1;i<a.length;i++){
             int j=i;
             while(j>0 && a[j]<a[j-1]){
@@ -76,7 +76,7 @@ public class HeapSortStructuralOutline {
     static final int MAX_V=90000;
     static final int MAX_NUM_ELE=90000;
     public static void countingSort(int []a){
-        int counts[]=new int[MAX_V];
+        int[] counts =new int[MAX_V];
         int []b=new int[a.length];
         for (int i=0;i<a.length;i++)
             counts[a[i]]++;  //the number of elements having the same value a[i];
@@ -87,13 +87,12 @@ public class HeapSortStructuralOutline {
             counts[a[i]]--;
             b[counts[a[i]]]=a[i];
         }
-        
-        for (int i=0;i<a.length;i++)
-            a[i]=b[i];
+
+        System.arraycopy(b, 0, a, 0, a.length);
         
     }
-    static int ma[]=new int [MAX_NUM_ELE];
-    private static void merger(int a[],int fb,int fe, int se){
+    static int[] ma =new int [MAX_NUM_ELE];
+    private static void merger(int[] a, int fb, int fe, int se){
         int mi=0;
         int fi=fb;
         int si=fe+1;
@@ -106,10 +105,9 @@ public class HeapSortStructuralOutline {
             ma[mi++]=a[fi++];
         while (si<=se)
             ma[mi++]=a[si++];
-        for (int i=fb;i<=se;i++)
-            a[i]=ma[i-fb];
+        if (se + 1 - fb >= 0) System.arraycopy(ma, 0, a, fb, se + 1 - fb);
     }
-    public static void mergeSort(int a[],int b,int e){
+    public static void mergeSort(int[] a, int b, int e){
         if(b>=e) return;
         int mid=b+(e-b)/2;
         mergeSort(a,b,mid);
@@ -119,13 +117,13 @@ public class HeapSortStructuralOutline {
     public static void main(String[] args) {
         //System.out.println("Hello World!");
         //generate random array
-        int a[]=new int [MAX_NUM_ELE];  //{10, 2, 5, 3, 11, 7, 6, 9, 4,8, 2, 3,1, 10};
+        int[] a =new int [MAX_NUM_ELE];  //{10, 2, 5, 3, 11, 7, 6, 9, 4,8, 2, 3,1, 10};
         
         Random ran=new Random();
         for (int i=0;i<MAX_NUM_ELE;i++)
             a[i]=ran.nextInt(MAX_V)+1;
         //
-        int back[]=Arrays.copyOf(a,a.length);
+        int[] back =Arrays.copyOf(a,a.length);
         System.out.println("Begin testing heap sort ...");
         
         long stime=System.currentTimeMillis();
