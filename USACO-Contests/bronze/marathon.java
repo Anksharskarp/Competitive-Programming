@@ -3,6 +3,7 @@ ID: anksharskarp
 LANG: JAVA
 TASK: marathon
 */
+//SUCCESS
 import java.io.*;
 import java.util.*;
 

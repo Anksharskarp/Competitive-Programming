@@ -1,13 +1,5 @@
 package intermediate.coursework.linkedlists;
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- * @author zouMicrosoftSurface
- */
 public class LinkedList<E> {
     Node<E> head;
 
@@ -16,7 +8,7 @@ public class LinkedList<E> {
     }
 
     /*
-    1. one important error: preN=tmpN.next ==> preN.next=tmpN.next in remove
+    1. one important error/clarification: preN=tmpN.next ==> preN.next=tmpN.next in remove
     2. insertAtIndex ==> insertAsIndex
     3. test for negative value
     4. test different cases, how to?
@@ -133,10 +125,10 @@ public class LinkedList<E> {
 
     public int size() {
         int size = 0;
-        Node tmpN = head;
-        while (tmpN != null) {
+        Node temporaryNode = head;
+        while (temporaryNode != null) {
             size++;
-            tmpN = tmpN.next;
+            temporaryNode = temporaryNode.next;
         }
         return size;
     }
@@ -155,56 +147,42 @@ public class LinkedList<E> {
         while (tmpN.next != null)
             tmpN = tmpN.next;
         return (E) (tmpN.element);
-
-        /*     if(tail==null)
-            return null;
-        else
-            return tail.element;
-        */
     }
 
-    public E getElement(int ind) {
-        //ind >=0;  0: first emelement
-        int ti = 0;
-        //   if (size <ind+1)
-        //     return null;
-        Node tmpN = head;
-        while (tmpN != null && ti < ind) {
-            tmpN = tmpN.next;
-            ti++;
+    public E getElement(int index) {
+        //If index >=0, then 0 corresponds to the first element
+        int counter = 0;
+        Node temporaryNode = head;
+        while (temporaryNode != null && counter < index) {
+            temporaryNode = temporaryNode.next;
+            counter++;
         }
-        if (tmpN == null)
+        if (temporaryNode == null)
             return null;
         else
-            return (E) (tmpN.element);
+            return (E) (temporaryNode.element);
     }
 
     //add more methods
     public void insertAtHead(Node n) {
         if (head == null) {//initially an empty DemoLinkedList
             head = n;
-            // tail=n;
         } else {
             n.next = head;
             head = n;
         }
-        // size++;
     }
 
-    //
     public void insertAtTail(Node n) {
-        if (head == null) {//initial empty
+        if (head == null) {
+            //Initially empty
             head = n;
-            /// n.next=null;
             return;
         }
         Node tmpN = head;
-        //go to the lase
         while (tmpN.next != null)
             tmpN = tmpN.next;
         tmpN.next = n;
-        //n.next=null;
-        // size++;
     }
 
     public void append(Node n) {
@@ -232,7 +210,7 @@ public class LinkedList<E> {
             n.next = tmpN.next;
             tmpN.next = n;
 
-        }//else //discard it, do nothing.
+        }//Ends here
     }
 
     public void insertAsIndex(Node n, int ind) {
