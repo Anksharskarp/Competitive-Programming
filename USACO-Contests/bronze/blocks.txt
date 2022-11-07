@@ -51,5 +51,6 @@ box dog car
 box dog bus
 box cat car
 box cat bus
+
 We need enough blocks for each letter of the alphabet so that we can spell all three words, irrespective of which of these eight scenarios occurs.
 Problem credits: Viktoriia Schwartz

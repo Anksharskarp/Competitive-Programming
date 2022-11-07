@@ -14,7 +14,6 @@ public class blocks {
 
         BufferedReader br = new BufferedReader(new FileReader("blocks.in"));
         int n = Integer.parseInt(br.readLine());
-
         int[] frequencyTable = new int[26];
 
         for (int i = 0; i < n; i++) {

@@ -28,7 +28,6 @@ but you cannot travel along a direct line "as the crow flies".
 INPUT: (file marathon.in)
 
 The first line gives the value of N.
-
 The next N lines each contain two space-separated integers, x and y,
 representing a checkpoint (-1000 <= x <= 1000, -1000 <= y <= 1000).
 The checkpoints are given in the order that they must be visited.

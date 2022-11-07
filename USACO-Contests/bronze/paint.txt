@@ -14,6 +14,7 @@ SAMPLE INPUT:
 4 8
 SAMPLE OUTPUT:
 6
+
 Here, 6 total units of fence are covered with paint, from x=4 all the way through x=10.
 
 Problem credits: Brian Dean

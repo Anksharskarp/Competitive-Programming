@@ -17,6 +17,7 @@ public class paint {
         int d = io.nextInt();
 
         int[] cover = new int[100];
+
         for (int i = a; i < b; i++) {
             cover[i] = 1;
         }

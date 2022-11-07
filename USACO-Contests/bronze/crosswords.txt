@@ -60,7 +60,6 @@ clear cells may not be part of any clue.
 INPUT: (file crosswords.in)
 
 The first line of input contains N and M separated by a space.
-
 The next N lines of input each describe a row of the grid.  Each
 contains M characters, which are either '.' (a clear cell) or '#' (a
 blocked cell).
